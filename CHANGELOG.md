@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/DanClowry/semantictest/compare/v2.0.0...v2.1.0) (2019-12-02)
+
+
+### Features
+
+* Add goodbye method ([9536e23](https://github.com/DanClowry/semantictest/commit/9536e23f85291c874b52d30cbe09cd175edcce15))
+
 # [2.0.0](https://github.com/DanClowry/semantictest/compare/v1.0.1...v2.0.0) (2019-12-02)
 
 
