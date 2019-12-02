@@ -9,9 +9,9 @@ namespace semantictest
             return $"Hello {name}";
         }
 
-        public string Bye()
+        public string Bye(string name)
         {
-            return "Goodbye";
+            return $"Goodbye {name}";
         }
 
         public DateTime Time()
