@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/DanClowry/semantictest/compare/v2.1.0...v2.1.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* Bye method return value ([495cb6f](https://github.com/DanClowry/semantictest/commit/495cb6f47f66ce116665e28c18e19e3912be1afe))
+
 # [2.1.0](https://github.com/DanClowry/semantictest/compare/v2.0.0...v2.1.0) (2019-12-02)
 
 
