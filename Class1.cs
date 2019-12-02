@@ -8,5 +8,10 @@ namespace semantictest
         {
             return $"Hello {name}";
         }
+
+        public string Bye()
+        {
+            return "Goodbey";
+        }
     }
 }
