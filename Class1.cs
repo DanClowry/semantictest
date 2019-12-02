@@ -11,7 +11,7 @@ namespace semantictest
 
         public string Bye()
         {
-            return "Goodbey";
+            return "Goodbye";
         }
     }
 }
