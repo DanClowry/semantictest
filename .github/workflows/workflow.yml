@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-        with:
-          ref: master
+      - name: Checkout master
+        run: git checkout "${GITHUB_REF:11}"
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -31,13 +31,16 @@ jobs:
     needs: [clean]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.0.100
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Checkout master
+        run: git checkout "${GITHUB_REF:11}"
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.0.100
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
 
   clean:
     name: Clean project
@@ -46,6 +49,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Checkout master
+        run: git checkout "${GITHUB_REF:11}"
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
