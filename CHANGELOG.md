@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/DanClowry/semantictest/compare/v2.2.0...v3.0.0) (2019-12-02)
+
+
+### Features
+
+* **Bye:** Add name to bye method ([526a41d](https://github.com/DanClowry/semantictest/commit/526a41d02f0b603113a58af9182c110538d61377))
+
+
+### BREAKING CHANGES
+
+* **Bye:** Bye method now requires an input string
+
 # [2.2.0](https://github.com/DanClowry/semantictest/compare/v2.1.1...v2.2.0) (2019-12-02)
 
 
