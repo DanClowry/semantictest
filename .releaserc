@@ -1,0 +1,14 @@
+{
+	"plugins": [
+		"@semantic-release/commit-analyzer",
+		"@semantic-release/release-notes-generator",
+		"@semantic-release/github",
+		[
+			"@semantic-release/exec",
+			{
+				"prepareCmd": "dotnet clean",
+				"publishCmd": "dotnet build --configuration Release"
+			}
+		]
+	]
+}
