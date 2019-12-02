@@ -5,14 +5,21 @@
     [
       "@semantic-release/changelog",
       {
-        "changelogFile": "docs/CHANGELOG.md"
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ],
     [
       "@semantic-release/exec",
       {
         "prepareCmd": "dotnet clean",
-        "publishCmd": "dotnet build --configuration Release"
+        "publishCmd": "dotnet pack --configuration Release"
       }
     ],
     [
@@ -20,8 +27,8 @@
       {
         "assets": [
           {
-            "path": "bin/Release/netstandard2.0/**",
-            "label": "Library Release"
+            "path": "bin/Release/*.nupkg",
+            "label": "Nuget Pakcage"
           }
         ]
       }

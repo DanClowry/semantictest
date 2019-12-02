@@ -4,9 +4,9 @@ namespace semantictest
 {
     public class Class1
     {
-        public string Hello()
+        public string Hello(string name)
         {
-            return "Hello";
+            return $"Hello {name}";
         }
     }
 }
