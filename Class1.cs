@@ -13,5 +13,10 @@ namespace semantictest
         {
             return "Goodbye";
         }
+
+        public DateTime Time()
+        {
+            return DateTime.Now;
+        }
     }
 }
