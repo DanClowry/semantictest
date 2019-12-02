@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/DanClowry/semantictest/compare/v2.1.1...v2.2.0) (2019-12-02)
+
+
+### Features
+
+* Add current date method ([15ae27d](https://github.com/DanClowry/semantictest/commit/15ae27db2eee3ed1dc8a51cb91aabe5dc7351d54))
+
 ## [2.1.1](https://github.com/DanClowry/semantictest/compare/v2.1.0...v2.1.1) (2019-12-02)
 
 
