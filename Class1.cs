@@ -6,7 +6,7 @@ namespace semantictest
     {
         public string Hello()
         {
-            return "Hlleo";
+            return "Hello";
         }
     }
 }
