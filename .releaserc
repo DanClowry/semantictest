@@ -18,7 +18,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "dotnet clean --configuration Release && del bin /S /Q && del obj /S /Q",
+        "prepareCmd": "dotnet clean --configuration Release",
         "publishCmd": "dotnet pack --configuration Release"
       }
     ],
